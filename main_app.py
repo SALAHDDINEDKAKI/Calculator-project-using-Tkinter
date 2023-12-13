@@ -1,9 +1,21 @@
-from tkinter import Tk, Entry, Button, StringVar
+from tkinter import *
 
 class Calculator:
     def __init__(self,master):
         master.title("Calculator")
-        master.geometry('357x420+0+0')
+        master.iconbitmap('')
+        app_width = 357
+        app_height = 420
+
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+
+        x = (screen_width / 2) - (app_width / 2)
+        y = (screen_height / 2) - (app_height / 2)
+
+        master.geometry(f'{app_width}x{app_height}+{int(x)}+{int(y)}')
+        my_label = Label(root, text =f'Width:{screen_width} Height:{screen_height}')
+        my_label.pack(pady=20)
         master.config(bg='black')
         master.resizable(False,False)
 
