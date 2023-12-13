@@ -3,7 +3,7 @@ from tkinter import *
 class Calculator:
     def __init__(self,master):
         master.title("Calculator")
-        master.iconbitmap('')
+        master.iconbitmap('C:/Users/Herr Salai/Desktop/Programation/Python/Python projects/Calculator using Tkinter/assets/cal.ico')
         app_width = 357
         app_height = 420
         screen_width = root.winfo_screenwidth()
